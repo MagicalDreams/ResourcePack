@@ -95,15 +95,24 @@ To build without pushing another commit, open the workflow in **Actions**, selec
 
 ### GitHub website
 
-1. Download and extract the successful artifact for the pack being released.
-2. Open **Releases** and select **Draft a new release**.
-3. Create a pack-specific tag such as `generic-v2.1.0` or `parks-v2.1.0`.
-4. Target the `main` branch.
-5. Use a title such as `MagicalDreams Generic Pack v2.1.0`.
-6. Attach the Minecraft-ready ZIP from the artifact.
-7. Generate or write release notes, then publish the release.
+1. Update the pack's version file and the version displayed in its `pack.mcmeta`.
+2. Commit and push the changes to `main`.
+3. Open **Actions** → **Build resource packs** and wait for the run to succeed.
+4. Download the artifact for the pack being released:
+   - `MagicalDreams-Generic-Pack-vX.Y.Z`
+   - `MagicalDreams-Parks-Pack-vX.Y.Z`
+5. Extract the downloaded artifact to get the Minecraft-ready ZIP.
+6. Open **Releases** and select **Draft a new release**.
+7. Create a pack-specific tag matching its version:
+   - Generic: `generic-vX.Y.Z`
+   - Parks: `parks-vX.Y.Z`
+8. Target the `main` branch.
+9. Use a title such as `MagicalDreams Parks Pack v2.1.0`.
+10. Attach the Minecraft-ready ZIP from the extracted artifact.
+11. Generate or write release notes, then select **Publish release**.
 
 Do not attach the outer Actions artifact ZIP; attach the Minecraft-ready ZIP inside it.
+If both packs changed, create two releases with their respective tags and ZIPs.
 
 ### GitHub CLI
 
