@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 15,
-    "supported_formats": [15, 255],
-    "min_format": 15,
-    "max_format": 255,
-    "description": "§2Version 2.0 §aVanilla Edition\n§eMagicalDreams.us"
+    "pack_format": 88,
+    "supported_formats": [34, 88],
+    "min_format": 34,
+    "max_format": 88,
+    "description": "§bMagicalDreams §aParks Pack\n§bVersion 2.0.0 §a(1.21.1–26.2)"
   }
 }
