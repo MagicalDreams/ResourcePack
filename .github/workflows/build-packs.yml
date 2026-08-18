@@ -1,0 +1,26 @@
+name: Build resource packs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - id: version
+        run: echo "value=$(<VERSION)" >> "$GITHUB_OUTPUT"
+
+      - name: Bundle packs
+        run: |
+          mkdir dist
+          (cd "Generic RP" && zip -r "../dist/MagicalDreams-Generic-Pack-v${{ steps.version.outputs.value }}.zip" . -x '*.DS_Store')
+          (cd "Parks RP" && zip -r "../dist/MagicalDreams-Parks-Pack-v${{ steps.version.outputs.value }}.zip" . -x '*.DS_Store')
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MagicalDreams-resource-packs-v${{ steps.version.outputs.value }}
+          path: dist/*.zip
