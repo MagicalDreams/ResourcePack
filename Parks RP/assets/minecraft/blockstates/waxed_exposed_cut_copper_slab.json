@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/waxed_exposed_cut_copper_slab"
+    },
+    "type=double,waterlogged=false": {
+      "model": "minecraft:block/waxed_exposed_cut_copper_slab_double"
+    },
+    "type=top": {
+      "model": "minecraft:block/waxed_exposed_cut_copper_slab_top"
+     },
+     "type=double,waterlogged=true": { 
+       "model": "minecraft:block/waxed_exposed_cut_copper_slab_double_w"
+     }
+    }
+  }
+
+
