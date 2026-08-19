@@ -23,13 +23,13 @@ jobs:
           (cd "Parks RP" && zip -r "../dist/MagicalDreams-Parks-Pack-v${{ steps.versions.outputs.parks }}.zip" . -x '*.DS_Store')
 
       - name: Upload Generic pack
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: MagicalDreams-Generic-Pack-v${{ steps.versions.outputs.generic }}
           path: dist/MagicalDreams-Generic-Pack-v${{ steps.versions.outputs.generic }}.zip
+          archive: false
 
       - name: Upload Parks pack
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
-          name: MagicalDreams-Parks-Pack-v${{ steps.versions.outputs.parks }}
           path: dist/MagicalDreams-Parks-Pack-v${{ steps.versions.outputs.parks }}.zip
+          archive: false

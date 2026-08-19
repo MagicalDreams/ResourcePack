@@ -86,8 +86,8 @@ Every push to `main` automatically runs **Build resource packs**.
 1. Open the repository's **Actions** tab.
 2. Select **Build resource packs**.
 3. Open the latest successful run.
-4. Download the versioned Generic or Parks artifact under **Artifacts**.
-5. Extract the downloaded artifact to get the Minecraft-ready pack ZIP.
+4. Download the versioned Generic or Parks ZIP under **Artifacts**.
+5. Put that downloaded ZIP directly in Minecraft's `resourcepacks` folder.
 
 To build without pushing another commit, open the workflow in **Actions**, select **Run workflow**, choose `main`, and run it.
 
@@ -98,20 +98,18 @@ To build without pushing another commit, open the workflow in **Actions**, selec
 1. Update the pack's version file and the version displayed in its `pack.mcmeta`.
 2. Commit and push the changes to `main`.
 3. Open **Actions** → **Build resource packs** and wait for the run to succeed.
-4. Download the artifact for the pack being released:
-   - `MagicalDreams-Generic-Pack-vX.Y.Z`
-   - `MagicalDreams-Parks-Pack-vX.Y.Z`
-5. Extract the downloaded artifact to get the Minecraft-ready ZIP.
-6. Open **Releases** and select **Draft a new release**.
-7. Create a pack-specific tag matching its version:
+4. Download the Minecraft-ready ZIP for the pack being released:
+   - `MagicalDreams-Generic-Pack-vX.Y.Z.zip`
+   - `MagicalDreams-Parks-Pack-vX.Y.Z.zip`
+5. Open **Releases** and select **Draft a new release**.
+6. Create a pack-specific tag matching its version:
    - Generic: `generic-vX.Y.Z`
    - Parks: `parks-vX.Y.Z`
-8. Target the `main` branch.
-9. Use a title such as `MagicalDreams Parks Pack v2.1.0`.
-10. Attach the Minecraft-ready ZIP from the extracted artifact.
-11. Generate or write release notes, then select **Publish release**.
+7. Target the `main` branch.
+8. Use a title such as `MagicalDreams Parks Pack v2.1.0`.
+9. Attach the downloaded Minecraft-ready ZIP.
+10. Generate or write release notes, then select **Publish release**.
 
-Do not attach the outer Actions artifact ZIP; attach the Minecraft-ready ZIP inside it.
 If both packs changed, create two releases with their respective tags and ZIPs.
 
 ### GitHub CLI
@@ -121,7 +119,7 @@ With [GitHub CLI](https://cli.github.com/) installed and authenticated:
 ```sh
 version=$(<GENERIC_VERSION)
 release_dir=$(mktemp -d)
-gh run download --name "MagicalDreams-Generic-Pack-v${version}" --dir "$release_dir"
+gh run download --name "MagicalDreams-Generic-Pack-v${version}.zip" --dir "$release_dir"
 gh release create "generic-v${version}" "$release_dir/MagicalDreams-Generic-Pack-v${version}.zip" \
   --title "MagicalDreams Generic Pack v${version}" \
   --generate-notes
