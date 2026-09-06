@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "Spotlight Beam",
+  "model_identifier": "spotlight_beam",
+  "ambientocclusion": false,
+  "resolution": {
+    "width": 128,
+    "height": 256
+  },
+  "elements": [
+    {
+      "name": "Beam plane 1",
+      "type": "cube",
+      "uuid": "37b88695-8ccd-499e-ad77-ccdcd1e1379e",
+      "from": [
+        0,
+        0,
+        8
+      ],
+      "to": [
+        16,
+        32,
+        8
+      ],
+      "origin": [
+        8,
+        16,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "shade": false,
+      "box_uv": false,
+      "autouv": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        }
+      }
+    },
+    {
+      "name": "Beam plane 2",
+      "type": "cube",
+      "uuid": "486f0975-240e-48f7-ad78-4bae310c494f",
+      "from": [
+        8,
+        0,
+        0
+      ],
+      "to": [
+        8,
+        32,
+        16
+      ],
+      "origin": [
+        8,
+        16,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "shade": false,
+      "box_uv": false,
+      "autouv": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        }
+      }
+    },
+    {
+      "name": "Beam plane 3",
+      "type": "cube",
+      "uuid": "050365a7-08a0-4cbc-b806-0537244d5504",
+      "from": [
+        0,
+        0,
+        8
+      ],
+      "to": [
+        16,
+        32,
+        8
+      ],
+      "origin": [
+        8,
+        16,
+        8
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "shade": false,
+      "box_uv": false,
+      "autouv": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        }
+      }
+    },
+    {
+      "name": "Beam plane 4",
+      "type": "cube",
+      "uuid": "8d67cca7-5fe4-4382-b146-bec87de3ba46",
+      "from": [
+        0,
+        0,
+        8
+      ],
+      "to": [
+        16,
+        32,
+        8
+      ],
+      "origin": [
+        8,
+        16,
+        8
+      ],
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "shade": false,
+      "box_uv": false,
+      "autouv": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": 0,
+          "tint": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            128,
+            256
+          ],
+          "texture": null,
+          "tint": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "Soft spotlight beam",
+      "origin": [
+        8,
+        32,
+        8
+      ],
+      "uuid": "f1335a54-d444-488c-b5f3-0d89459668ed",
+      "children": [
+        "37b88695-8ccd-499e-ad77-ccdcd1e1379e",
+        "486f0975-240e-48f7-ad78-4bae310c494f",
+        "050365a7-08a0-4cbc-b806-0537244d5504",
+        "8d67cca7-5fe4-4382-b146-bec87de3ba46"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "spotlight_beam.png",
+      "folder": "item",
+      "namespace": "spotlight",
+      "id": "0",
+      "uuid": "4760c47d-8feb-45bc-a98a-2ba006601214",
+      "width": 128,
+      "height": 256,
+      "uv_width": 128,
+      "uv_height": 256,
+      "source": "data:image/png;base64,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",
+      "relative_path": "spotlight_beam.png"
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -24,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        25
+      ],
+      "translation": [
+        0,
+        -4,
+        0
+      ],
+      "scale": [
+        0.48,
+        0.48,
+        0.48
+      ]
+    }
+  }
+}

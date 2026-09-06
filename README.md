@@ -2,10 +2,14 @@
 
 This repository contains two Minecraft Java Edition resource packs:
 
-- `Generic RP` — UI and font resources
+- `Generic RP` — UI, font resources, and shared models
 - `Parks RP` — the complete parks resource pack
 
 Both packs target Minecraft 26.2 and declare support for 1.21.1–26.2.
+
+## Editable models
+
+Blockbench source projects live in [`bbmodel-projects`](bbmodel-projects/README.md). The [tintable spotlight beam](bbmodel-projects/spotlight-beam/README.md) is included in both packs as `spotlight:spotlight_beam`. Its runtime RGB tint requires Java 1.21.4+, even though the packs also support older clients. Shared model exports must be updated in both pack folders.
 
 ## Make and push changes
 
