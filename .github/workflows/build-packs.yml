@@ -3,33 +3,69 @@ name: Build resource packs
 on:
   push:
     branches: [main]
+    paths:
+      - 'Generic RP/**'
+      - 'Parks RP/**'
+      - GENERIC_VERSION
+      - PARKS_VERSION
+      - 'scripts/**'
+      - .github/workflows/build-packs.yml
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Preserve queued builds and serialize publication separately for each branch.
+concurrency:
+  group: resource-pack-release-${{ github.ref }}
+  queue: max
+  cancel-in-progress: false
 
 jobs:
   bundle:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
 
-      - id: versions
+      - name: Validate and build packs
+        run: python3 scripts/build_packs.py --build-number "$GITHUB_RUN_NUMBER"
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
         run: |
-          echo "generic=$(<GENERIC_VERSION)" >> "$GITHUB_OUTPUT"
-          echo "parks=$(<PARKS_VERSION)" >> "$GITHUB_OUTPUT"
+          set -euo pipefail
+          tag="build-$GITHUB_RUN_NUMBER"
+          release_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/tag/$tag"
 
-      - name: Bundle packs
-        run: |
-          mkdir dist
-          (cd "Generic RP" && zip -r "../dist/MagicalDreams-Generic-Pack-v${{ steps.versions.outputs.generic }}.zip" . -x '*.DS_Store')
-          (cd "Parks RP" && zip -r "../dist/MagicalDreams-Parks-Pack-v${{ steps.versions.outputs.parks }}.zip" . -x '*.DS_Store')
+          # A retry resumes an unfinished draft, but never replaces a published build.
+          if state=$(gh release view "$tag" --json isDraft --jq '.isDraft'); then
+            if [[ "$state" == false ]]; then
+              echo "[Build $GITHUB_RUN_NUMBER already published]($release_url)" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+          else
+            gh release create "$tag" --draft --target "$GITHUB_SHA" \
+              --title "Build $GITHUB_RUN_NUMBER" --notes-file dist/release-notes.md
+          fi
 
-      - name: Upload Generic pack
-        uses: actions/upload-artifact@v7
-        with:
-          path: dist/MagicalDreams-Generic-Pack-v${{ steps.versions.outputs.generic }}.zip
-          archive: false
+          gh release upload "$tag" \
+            dist/MagicalDreams-Generic-Pack.zip \
+            dist/MagicalDreams-Parks-Pack.zip --clobber
 
-      - name: Upload Parks pack
-        uses: actions/upload-artifact@v7
-        with:
-          path: dist/MagicalDreams-Parks-Pack-v${{ steps.versions.outputs.parks }}.zip
-          archive: false
+          # Retrying an older failed build must not move the latest links backwards.
+          published_tags=$(gh api --paginate 'repos/{owner}/{repo}/releases' \
+            --jq '.[] | select(.draft == false and .prerelease == false) | .tag_name')
+          make_latest=true
+          while IFS= read -r published_tag; do
+            if [[ "$published_tag" =~ ^build-([0-9]+)$ ]] && \
+               (( BASH_REMATCH[1] > GITHUB_RUN_NUMBER )); then
+              make_latest=false
+            fi
+          done <<< "$published_tags"
+          gh release edit "$tag" --draft=false --latest="$make_latest"
+          cat dist/release-notes.md >> "$GITHUB_STEP_SUMMARY"
+          echo "[Download Build $GITHUB_RUN_NUMBER]($release_url)" >> "$GITHUB_STEP_SUMMARY"

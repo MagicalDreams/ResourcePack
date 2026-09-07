@@ -34,107 +34,64 @@ Blockbench source projects live in [`bbmodel-projects`](bbmodel-projects/README.
 
 Only stage the pack folders that you actually changed.
 
-## Change a pack version
+## Versioning
 
-Each pack has an independent version:
+Each pack keeps its own version in one authoritative file:
 
-| Pack | Build version | In-game description |
-| --- | --- | --- |
-| Generic | `GENERIC_VERSION` | `Generic RP/pack.mcmeta` |
-| Parks | `PARKS_VERSION` | `Parks RP/pack.mcmeta` |
+| Pack | Version file |
+| --- | --- |
+| Generic | `GENERIC_VERSION` |
+| Parks | `PARKS_VERSION` |
 
-To release a new version of one pack:
+For routine changes, edit and push. A version bump is optional. When appropriate, update only the affected version file using `X.Y.Z`: patch for fixes (`2.0.1`), minor for compatible additions (`2.1.0`), and major for breaking changes (`3.0.0`). Commit that file with the pack changes.
 
-1. Update its version file, for example to `2.1.0`.
-2. Update the displayed version in that pack's `pack.mcmeta` description.
-3. Commit the version together with the pack changes:
+GitHub assigns each workflow run a build number. The build stamps the ZIP's in-game description with both values, for example `Version 2.0.1 · Build 142`. Both packs share the build number but keep independent versions. Build numbers may have gaps, and rerunning the same workflow run keeps its number.
 
-   ```sh
-   git add GENERIC_VERSION "Generic RP"
-   git commit -m "Release Generic pack 2.1.0"
-   git push origin main
-   ```
+You no longer need to update the version in `pack.mcmeta`. Its checked-in description is used as a template; packaging replaces the `Version X.Y.Z` text while preserving the pack name, colors, compatibility text, and other metadata. The source folders are not modified.
 
-For a Parks release, use `PARKS_VERSION` and `Parks RP` instead.
+## Download the latest packs
 
-Use patch versions for fixes (`2.0.1`), minor versions for compatible additions (`2.1.0`), and major versions for breaking changes (`3.0.0`).
+- [Download Generic pack](https://github.com/MagicalDreams/ResourcePack/releases/latest/download/MagicalDreams-Generic-Pack.zip)
+- [Download Parks pack](https://github.com/MagicalDreams/ResourcePack/releases/latest/download/MagicalDreams-Parks-Pack.zip)
+- [Browse builds and older downloads](https://github.com/MagicalDreams/ResourcePack/releases)
 
-## Validate locally
+These links become available after the first successful automated release. Download the desired ZIP and place it directly in Minecraft's `resourcepacks` folder. Replace the previous copy and remove any older version-named copies of that same pack to avoid duplicate entries. Enable the pack in Minecraft; reload resources if it is already enabled.
 
-Check the metadata JSON:
+The download filenames stay constant. The version and build number appear inside the pack and in the release notes. Each release retains both ZIPs for rollback.
 
-```sh
-jq empty "Generic RP/pack.mcmeta" "Parks RP/pack.mcmeta"
-```
+## Automatic builds and releases
 
-Build the same versioned ZIPs produced by GitHub Actions:
+Pushes to `main` that change a pack folder, version file, build script, or this workflow automatically:
 
-```sh
-generic_version=$(<GENERIC_VERSION)
-parks_version=$(<PARKS_VERSION)
-mkdir -p dist
-rm -f "dist/MagicalDreams-Generic-Pack-v${generic_version}.zip" \
-      "dist/MagicalDreams-Parks-Pack-v${parks_version}.zip"
-(cd "Generic RP" && zip -r "../dist/MagicalDreams-Generic-Pack-v${generic_version}.zip" . -x '*.DS_Store')
-(cd "Parks RP" && zip -r "../dist/MagicalDreams-Parks-Pack-v${parks_version}.zip" . -x '*.DS_Store')
-unzip -t "dist/MagicalDreams-Generic-Pack-v${generic_version}.zip"
-unzip -t "dist/MagicalDreams-Parks-Pack-v${parks_version}.zip"
-```
+1. Validate metadata and version numbers, stamp descriptions, and build/test both ZIPs.
+2. Publish one GitHub release named **Build N**, tagged `build-N` at the exact source commit, containing both packs and their version information.
+3. Update the latest-download links when this is the newest published build.
 
-Each ZIP must contain `pack.mcmeta` at its root, not inside another folder.
+Documentation-only or Blockbench-source-only changes do not trigger a release. Export model changes into the pack folders before pushing them for use in game.
 
-## Get a new build from GitHub Actions
+To build without a new commit, open **Actions → Build resource packs → Run workflow** and choose `main`. Other branches do not publish releases. A new manual run gets a new build number; rerunning an existing run resumes its unfinished draft or leaves its already-published release intact. Older retries do not replace newer builds at the latest-download links.
 
-Every push to `main` automatically runs **Build resource packs**.
+Release publication uses GitHub's built-in workflow token with `contents: write`; no personal access token is needed under normal repository settings. Both ZIPs are uploaded to a draft before publication, so incomplete uploads do not replace the last successful release. Releases replace the previous Actions-artifact download process and manual release creation.
 
-1. Open the repository's **Actions** tab.
-2. Select **Build resource packs**.
-3. Open the latest successful run.
-4. Download the versioned Generic or Parks ZIP under **Artifacts**.
-5. Put that downloaded ZIP directly in Minecraft's `resourcepacks` folder.
+## Build locally
 
-To build without pushing another commit, open the workflow in **Actions**, select **Run workflow**, choose `main`, and run it.
-
-## Create a GitHub Release
-
-### GitHub website
-
-1. Update the pack's version file and the version displayed in its `pack.mcmeta`.
-2. Commit and push the changes to `main`.
-3. Open **Actions** → **Build resource packs** and wait for the run to succeed.
-4. Download the Minecraft-ready ZIP for the pack being released:
-   - `MagicalDreams-Generic-Pack-vX.Y.Z.zip`
-   - `MagicalDreams-Parks-Pack-vX.Y.Z.zip`
-5. Open **Releases** and select **Draft a new release**.
-6. Create a pack-specific tag matching its version:
-   - Generic: `generic-vX.Y.Z`
-   - Parks: `parks-vX.Y.Z`
-7. Target the `main` branch.
-8. Use a title such as `MagicalDreams Parks Pack v2.1.0`.
-9. Attach the downloaded Minecraft-ready ZIP.
-10. Generate or write release notes, then select **Publish release**.
-
-If both packs changed, create two releases with their respective tags and ZIPs.
-
-### GitHub CLI
-
-With [GitHub CLI](https://cli.github.com/) installed and authenticated:
+With Python 3 installed, run the same builder used by GitHub Actions:
 
 ```sh
-version=$(<GENERIC_VERSION)
-release_dir=$(mktemp -d)
-gh run download --name "MagicalDreams-Generic-Pack-v${version}.zip" --dir "$release_dir"
-gh release create "generic-v${version}" "$release_dir/MagicalDreams-Generic-Pack-v${version}.zip" \
-  --title "MagicalDreams Generic Pack v${version}" \
-  --generate-notes
+python3 scripts/build_packs.py
 ```
 
-For a Parks release, substitute `PARKS_VERSION`, `Parks`, and the `parks-v` tag prefix.
+The Minecraft-ready ZIPs are written to the ignored `dist/` folder:
+
+- `dist/MagicalDreams-Generic-Pack.zip`
+- `dist/MagicalDreams-Parks-Pack.zip`
+
+Local builds display `Build local`. To test a numbered build, use `python3 scripts/build_packs.py --build-number 142`. The script checks metadata parsing, version formatting, ZIP integrity, and root-level packaged metadata. It does not validate every model/texture or replace an in-game compatibility check.
 
 ## Troubleshooting
 
-- **No build appeared:** confirm the commit reached `main`, or run the workflow manually.
-- **The workflow failed:** open its failed step in the Actions run for the full error.
-- **Wrong version in a filename:** update and commit that pack's version file, then run a new build.
-- **Wrong version in Minecraft:** update the `description` in that pack's `pack.mcmeta`.
-- **Minecraft cannot detect the pack:** open the ZIP and confirm `pack.mcmeta` is at its root.
+- **No new release:** confirm the commit reached `main` and changed a watched path, or run the workflow manually.
+- **Build or publication failed:** open the failed step in Actions. A failed upload may leave a draft; rerun the failed job to resume it.
+- **Publication permission error:** check repository/organization token permissions and tag rules for `build-*`.
+- **Wrong displayed version:** update the affected `GENERIC_VERSION` or `PARKS_VERSION` file and push. Confirm Minecraft is using the newly downloaded ZIP.
+- **Minecraft cannot detect the pack:** use the attached pack ZIP, not GitHub's generated source-code archive.
