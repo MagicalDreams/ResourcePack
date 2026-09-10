@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "magicaldreams:item/menu/walt_disney_world"
+  },
+  "gui_light": "front"
+}

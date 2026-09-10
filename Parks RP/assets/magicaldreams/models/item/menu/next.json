@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "magicaldreams:item/menu/next"
+  },
+  "gui_light": "front"
+}

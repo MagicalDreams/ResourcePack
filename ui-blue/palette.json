@@ -1,0 +1,17 @@
+{
+  "ink": "#152c49",
+  "edge": "#244768",
+  "blue": "#3c6b91",
+  "rim": "#6c9cb9",
+  "panel": "#527b98",
+  "label": "#b1ccdc",
+  "label_edge": "#8cadc4",
+  "slot": "#384d61",
+  "slot_top": "#263b50",
+  "slot_light": "#7895aa",
+  "sky": "#67c4ef",
+  "ice": "#b5edff",
+  "gold": "#dfb75c",
+  "gold_light": "#ffe4a0",
+  "cream": "#fff0c9"
+}
