@@ -1,0 +1,1759 @@
+{
+  "book.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/anvil.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/beacon.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/blast_furnace.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/brewing_stand.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/cartography_table.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/crafter.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/crafting_table.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/creative_inventory/tab_inventory.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/creative_inventory/tab_item_search.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/creative_inventory/tab_items.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/dispenser.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/enchanting_table.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/furnace.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/gamemode_switcher.png": {
+    "size": [
+      128,
+      128
+    ],
+    "metadata": false
+  },
+  "container/grindstone.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/hopper.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/horse.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/inventory.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/loom.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/nautilus.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/shulker_box.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/smithing.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/smoker.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/stonecutter.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "container/villager.png": {
+    "size": [
+      512,
+      256
+    ],
+    "metadata": false
+  },
+  "footer_separator.png": {
+    "size": [
+      32,
+      2
+    ],
+    "metadata": false
+  },
+  "header_separator.png": {
+    "size": [
+      32,
+      2
+    ],
+    "metadata": false
+  },
+  "inworld_footer_separator.png": {
+    "size": [
+      32,
+      2
+    ],
+    "metadata": false
+  },
+  "inworld_header_separator.png": {
+    "size": [
+      32,
+      2
+    ],
+    "metadata": false
+  },
+  "inworld_menu_background.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "inworld_menu_list_background.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "menu_background.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "menu_list_background.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "recipe_book.png": {
+    "size": [
+      256,
+      256
+    ],
+    "metadata": false
+  },
+  "sprites/container/anvil/error.png": {
+    "size": [
+      28,
+      21
+    ],
+    "metadata": false
+  },
+  "sprites/container/anvil/text_field.png": {
+    "size": [
+      110,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/anvil/text_field_disabled.png": {
+    "size": [
+      110,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/button.png": {
+    "size": [
+      22,
+      22
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/button_disabled.png": {
+    "size": [
+      22,
+      22
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/button_highlighted.png": {
+    "size": [
+      22,
+      22
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/button_selected.png": {
+    "size": [
+      22,
+      22
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/cancel.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/beacon/confirm.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/blast_furnace/burn_progress.png": {
+    "size": [
+      24,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/blast_furnace/lit_progress.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/brewing_stand/brew_progress.png": {
+    "size": [
+      9,
+      28
+    ],
+    "metadata": false
+  },
+  "sprites/container/brewing_stand/bubbles.png": {
+    "size": [
+      12,
+      29
+    ],
+    "metadata": false
+  },
+  "sprites/container/brewing_stand/fuel_length.png": {
+    "size": [
+      18,
+      4
+    ],
+    "metadata": false
+  },
+  "sprites/container/bundle/background.png": {
+    "size": [
+      32,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/blocked_slot.png": {
+    "size": [
+      18,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/container/bundle/bundle_progressbar_border.png": {
+    "size": [
+      12,
+      12
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/bundle_progressbar_fill.png": {
+    "size": [
+      6,
+      6
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/bundle_progressbar_full.png": {
+    "size": [
+      6,
+      6
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/slot.png": {
+    "size": [
+      18,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/container/bundle/slot_background.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/slot_highlight_back.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/container/bundle/slot_highlight_front.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/container/cartography_table/duplicated_map.png": {
+    "size": [
+      50,
+      66
+    ],
+    "metadata": false
+  },
+  "sprites/container/cartography_table/error.png": {
+    "size": [
+      28,
+      21
+    ],
+    "metadata": false
+  },
+  "sprites/container/cartography_table/locked.png": {
+    "size": [
+      10,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/cartography_table/map.png": {
+    "size": [
+      66,
+      66
+    ],
+    "metadata": false
+  },
+  "sprites/container/cartography_table/scaled_map.png": {
+    "size": [
+      66,
+      66
+    ],
+    "metadata": false
+  },
+  "sprites/container/crafter/disabled_slot.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/crafter/powered_redstone.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/crafter/unpowered_redstone.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/scroller.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/scroller_disabled.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_1.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_2.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_3.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_4.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_5.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_6.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_7.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_1.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_2.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_3.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_4.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_5.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_6.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_7.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_1.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_2.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_3.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_4.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_5.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_6.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_selected_7.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_1.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_2.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_3.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_4.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_5.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_6.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_7.png": {
+    "size": [
+      26,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/enchantment_slot.png": {
+    "size": [
+      108,
+      19
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/enchantment_slot_disabled.png": {
+    "size": [
+      108,
+      19
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/enchantment_slot_highlighted.png": {
+    "size": [
+      108,
+      19
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_1.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_1_disabled.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_2.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_2_disabled.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_3.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/enchanting_table/level_3_disabled.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/furnace/burn_progress.png": {
+    "size": [
+      24,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/furnace/lit_progress.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/grindstone/error.png": {
+    "size": [
+      28,
+      21
+    ],
+    "metadata": false
+  },
+  "sprites/container/horse/armor_slot.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/horse/chest_slots.png": {
+    "size": [
+      90,
+      54
+    ],
+    "metadata": false
+  },
+  "sprites/container/horse/llama_armor_slot.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/horse/saddle_slot.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/inventory/effect_background.png": {
+    "size": [
+      32,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/container/inventory/effect_background_ambient.png": {
+    "size": [
+      32,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/container/inventory/effect_background_large.png": {
+    "size": [
+      120,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/inventory/effect_background_small.png": {
+    "size": [
+      32,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/banner_slot.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/dye_slot.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/error.png": {
+    "size": [
+      26,
+      26
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/pattern.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/pattern_highlighted.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/pattern_selected.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/pattern_slot.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/scroller.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/loom/scroller_disabled.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot.png": {
+    "size": [
+      18,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/amethyst_shard.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/axe.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/banner.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/banner_pattern.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/boots.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/brewing_fuel.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/chestplate.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/diamond.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/dye.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/emerald.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/helmet.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/hoe.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/horse_armor.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/ingot.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/lapis_lazuli.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/leggings.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/llama_armor.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/nautilus_armor.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/nautilus_armor_inventory.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/pickaxe.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/potion.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/quartz.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/redstone_dust.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/saddle.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/shield.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/shovel.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/smithing_template_armor_trim.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/smithing_template_netherite_upgrade.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/spear.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot/sword.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/slot_highlight_back.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/container/slot_highlight_front.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/container/smithing/error.png": {
+    "size": [
+      28,
+      21
+    ],
+    "metadata": false
+  },
+  "sprites/container/smoker/burn_progress.png": {
+    "size": [
+      24,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/container/smoker/lit_progress.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/container/stonecutter/recipe.png": {
+    "size": [
+      16,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/stonecutter/recipe_highlighted.png": {
+    "size": [
+      16,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/stonecutter/recipe_selected.png": {
+    "size": [
+      16,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/container/stonecutter/scroller.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/stonecutter/scroller_disabled.png": {
+    "size": [
+      12,
+      15
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/discount_strikethrough.png": {
+    "size": [
+      9,
+      2
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/experience_bar_background.png": {
+    "size": [
+      102,
+      5
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/experience_bar_current.png": {
+    "size": [
+      102,
+      5
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/experience_bar_result.png": {
+    "size": [
+      102,
+      5
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/out_of_stock.png": {
+    "size": [
+      28,
+      21
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/scroller.png": {
+    "size": [
+      6,
+      27
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/scroller_disabled.png": {
+    "size": [
+      6,
+      27
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/trade_arrow.png": {
+    "size": [
+      10,
+      9
+    ],
+    "metadata": false
+  },
+  "sprites/container/villager/trade_arrow_out_of_stock.png": {
+    "size": [
+      10,
+      9
+    ],
+    "metadata": false
+  },
+  "sprites/gamemode_switcher/selection.png": {
+    "size": [
+      26,
+      26
+    ],
+    "metadata": false
+  },
+  "sprites/gamemode_switcher/slot.png": {
+    "size": [
+      26,
+      26
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/button.png": {
+    "size": [
+      20,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/button_highlighted.png": {
+    "size": [
+      20,
+      18
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/crafting_overlay.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/crafting_overlay_disabled.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/crafting_overlay_disabled_highlighted.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/crafting_overlay_highlighted.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/filter_disabled.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/filter_disabled_highlighted.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/filter_enabled.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/filter_enabled_highlighted.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_filter_disabled.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_filter_disabled_highlighted.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_filter_enabled.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_filter_enabled_highlighted.png": {
+    "size": [
+      26,
+      16
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_overlay.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_overlay_disabled.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_overlay_disabled_highlighted.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/furnace_overlay_highlighted.png": {
+    "size": [
+      24,
+      24
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/overlay_recipe.png": {
+    "size": [
+      32,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/recipe_book/page_backward.png": {
+    "size": [
+      12,
+      17
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/page_backward_highlighted.png": {
+    "size": [
+      12,
+      17
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/page_forward.png": {
+    "size": [
+      12,
+      17
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/page_forward_highlighted.png": {
+    "size": [
+      12,
+      17
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/slot_craftable.png": {
+    "size": [
+      25,
+      25
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/slot_many_craftable.png": {
+    "size": [
+      25,
+      25
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/slot_many_uncraftable.png": {
+    "size": [
+      25,
+      25
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/slot_uncraftable.png": {
+    "size": [
+      25,
+      25
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/tab.png": {
+    "size": [
+      35,
+      27
+    ],
+    "metadata": false
+  },
+  "sprites/recipe_book/tab_selected.png": {
+    "size": [
+      35,
+      27
+    ],
+    "metadata": false
+  },
+  "sprites/toast/advancement.png": {
+    "size": [
+      160,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/toast/mouse.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/movement_keys.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/now_playing.png": {
+    "size": [
+      160,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/toast/recipe.png": {
+    "size": [
+      160,
+      32
+    ],
+    "metadata": false
+  },
+  "sprites/toast/recipe_book.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/right_click.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/social_interactions.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/system.png": {
+    "size": [
+      160,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/toast/tree.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/toast/tutorial.png": {
+    "size": [
+      160,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/toast/wooden_planks.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/tooltip/background.png": {
+    "size": [
+      100,
+      100
+    ],
+    "metadata": true
+  },
+  "sprites/tooltip/frame.png": {
+    "size": [
+      100,
+      100
+    ],
+    "metadata": true
+  },
+  "sprites/widget/checkbox.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/checkbox_highlighted.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/checkbox_selected.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/checkbox_selected_highlighted.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/cross_button.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/widget/cross_button_highlighted.png": {
+    "size": [
+      14,
+      14
+    ],
+    "metadata": false
+  },
+  "sprites/widget/locked_button.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/locked_button_disabled.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/locked_button_highlighted.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/page_backward.png": {
+    "size": [
+      23,
+      13
+    ],
+    "metadata": false
+  },
+  "sprites/widget/page_backward_highlighted.png": {
+    "size": [
+      23,
+      13
+    ],
+    "metadata": false
+  },
+  "sprites/widget/page_forward.png": {
+    "size": [
+      23,
+      13
+    ],
+    "metadata": false
+  },
+  "sprites/widget/page_forward_highlighted.png": {
+    "size": [
+      23,
+      13
+    ],
+    "metadata": false
+  },
+  "sprites/widget/preedit.png": {
+    "size": [
+      200,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/scroller.png": {
+    "size": [
+      6,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/widget/scroller_background.png": {
+    "size": [
+      6,
+      32
+    ],
+    "metadata": true
+  },
+  "sprites/widget/slider.png": {
+    "size": [
+      200,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/slider_handle.png": {
+    "size": [
+      8,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/slider_handle_highlighted.png": {
+    "size": [
+      8,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/slider_highlighted.png": {
+    "size": [
+      200,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/slot_frame.png": {
+    "size": [
+      80,
+      80
+    ],
+    "metadata": false
+  },
+  "sprites/widget/tab.png": {
+    "size": [
+      130,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/widget/tab_highlighted.png": {
+    "size": [
+      130,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/widget/tab_selected.png": {
+    "size": [
+      130,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/widget/tab_selected_highlighted.png": {
+    "size": [
+      130,
+      24
+    ],
+    "metadata": true
+  },
+  "sprites/widget/text_field.png": {
+    "size": [
+      200,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/text_field_highlighted.png": {
+    "size": [
+      200,
+      20
+    ],
+    "metadata": true
+  },
+  "sprites/widget/unlocked_button.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/unlocked_button_disabled.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "sprites/widget/unlocked_button_highlighted.png": {
+    "size": [
+      20,
+      20
+    ],
+    "metadata": false
+  },
+  "tab_header_background.png": {
+    "size": [
+      16,
+      16
+    ],
+    "metadata": false
+  }
+}

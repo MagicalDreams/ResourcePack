@@ -1,0 +1,846 @@
+{
+  "recipe_book.png": {
+    "source_version": "26.2"
+  },
+  "container/stonecutter.png": {
+    "source_version": "26.2"
+  },
+  "container/beacon.png": {
+    "source_version": "26.2"
+  },
+  "container/loom.png": {
+    "source_version": "26.2"
+  },
+  "container/smoker.png": {
+    "source_version": "26.2"
+  },
+  "container/crafter.png": {
+    "source_version": "26.2"
+  },
+  "container/dispenser.png": {
+    "source_version": "26.2"
+  },
+  "container/anvil.png": {
+    "source_version": "26.2"
+  },
+  "container/brewing_stand.png": {
+    "source_version": "26.2"
+  },
+  "container/creative_inventory/tab_inventory.png": {
+    "source_version": "26.2"
+  },
+  "container/creative_inventory/tab_items.png": {
+    "source_version": "26.2"
+  },
+  "container/creative_inventory/tab_item_search.png": {
+    "source_version": "26.2"
+  },
+  "container/inventory.png": {
+    "source_version": "26.2"
+  },
+  "container/villager.png": {
+    "source_version": "26.2"
+  },
+  "container/cartography_table.png": {
+    "source_version": "26.2"
+  },
+  "container/shulker_box.png": {
+    "source_version": "26.2"
+  },
+  "container/horse.png": {
+    "source_version": "26.2"
+  },
+  "container/grindstone.png": {
+    "source_version": "26.2"
+  },
+  "container/hopper.png": {
+    "source_version": "26.2"
+  },
+  "container/enchanting_table.png": {
+    "source_version": "26.2"
+  },
+  "container/furnace.png": {
+    "source_version": "26.2"
+  },
+  "container/crafting_table.png": {
+    "source_version": "26.2"
+  },
+  "container/smithing.png": {
+    "source_version": "26.2"
+  },
+  "container/blast_furnace.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/filter_disabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/tab_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_overlay_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_overlay.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/crafting_overlay_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_filter_enabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/filter_enabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/filter_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/page_backward_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/page_forward_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/overlay_recipe.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/slot_craftable.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_filter_disabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_filter_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/crafting_overlay_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_filter_enabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/tab.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_overlay_disabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/page_backward.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/page_forward.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/filter_enabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/slot_many_uncraftable.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/furnace_overlay_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/button.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/overlay_recipe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/slot_many_craftable.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/crafting_overlay.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/button_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/slot_uncraftable.png": {
+    "source_version": "26.2"
+  },
+  "sprites/recipe_book/crafting_overlay_disabled_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_handle_highlighted.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/unlocked_button_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/scroller_background.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/cross_button_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/scroller.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/unlocked_button_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_selected_highlighted.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/locked_button_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/locked_button_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/checkbox_selected_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/scroller_background.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_handle.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/checkbox_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slot_frame.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/text_field_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/page_backward_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/text_field.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/page_forward_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/scroller.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/text_field.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_handle_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/locked_button.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_handle.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_highlighted.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_highlighted.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/page_backward.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/page_forward.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/cross_button.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_selected.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/text_field_highlighted.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/checkbox_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/tab_selected_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/slider_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/checkbox.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/unlocked_button.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/system.png": {
+    "source_version": "1.21.1",
+    "reason": "Native 160x32 supports legacy manual UV slicing; explicit nine-slice metadata expands for modern toast heights."
+  },
+  "sprites/toast/tree.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/wooden_planks.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/recipe_book.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/social_interactions.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/right_click.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/movement_keys.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/tutorial.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/recipe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/mouse.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/advancement.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/button_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/cancel.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/confirm.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/button_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/button.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/beacon/button_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_3_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/enchantment_slot_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_1.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/enchantment_slot.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/enchantment_slot_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_3.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_1_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_2.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/enchanting_table/level_2_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/crafter/disabled_slot.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/crafter/unpowered_redstone.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/crafter/powered_redstone.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/scroller.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/error.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/banner_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/loom/pattern_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/pattern_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/loom/scroller_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/pattern_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/pattern.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/loom/dye_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/inventory/effect_background_small.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/inventory/effect_background_large.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/bundle/blocked_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/bundle/slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/bundle/background.png.mcmeta": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/bundle/background.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/stonecutter/scroller.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/stonecutter/scroller_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/stonecutter/recipe_selected.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/stonecutter/recipe_highlighted.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/stonecutter/recipe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/smoker/lit_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/smoker/burn_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/discount_strikethrough.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/scroller.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/trade_arrow_out_of_stock.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/out_of_stock.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/experience_bar_current.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/trade_arrow.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/experience_bar_result.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/scroller_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/villager/experience_bar_background.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/brewing_stand/bubbles.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/brewing_stand/fuel_length.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/brewing_stand/brew_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/horse/saddle_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/horse/chest_slots.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/horse/armor_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/horse/llama_armor_slot.png": {
+    "source_version": "1.21.1"
+  },
+  "sprites/container/anvil/error.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/anvil/text_field_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/anvil/text_field.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/cartography_table/scaled_map.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/cartography_table/error.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/cartography_table/map.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/cartography_table/locked.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/cartography_table/duplicated_map.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_3.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_5.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_6.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_3.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/scroller.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_6.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_5.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_4.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_4.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_5.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_2.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_7.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_2.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_3.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_1.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_7.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_4.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_4.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/scroller_disabled.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_1.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_7.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_5.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_6.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_1.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_6.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_3.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_selected_2.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_selected_7.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_bottom_unselected_1.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/creative_inventory/tab_top_unselected_2.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/blast_furnace/lit_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/blast_furnace/burn_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/furnace/lit_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/furnace/burn_progress.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/grindstone/error.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/smithing/error.png": {
+    "source_version": "26.2"
+  },
+  "container/nautilus.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot_highlight_back.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot_highlight_back.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot_highlight_front.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot_highlight_front.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_border.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_border.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_fill.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_fill.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_full.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/bundle_progressbar_full.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_background.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_background.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_highlight_back.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_highlight_back.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_highlight_front.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/bundle/slot_highlight_front.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/inventory/effect_background.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/inventory/effect_background.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/inventory/effect_background_ambient.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/inventory/effect_background_ambient.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/amethyst_shard.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/axe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/banner.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/banner_pattern.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/boots.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/brewing_fuel.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/chestplate.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/diamond.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/dye.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/emerald.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/helmet.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/hoe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/horse_armor.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/ingot.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/lapis_lazuli.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/leggings.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/llama_armor.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/nautilus_armor.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/nautilus_armor_inventory.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/pickaxe.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/potion.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/quartz.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/redstone_dust.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/saddle.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/shield.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/shovel.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/smithing_template_armor_trim.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/smithing_template_netherite_upgrade.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/spear.png": {
+    "source_version": "26.2"
+  },
+  "sprites/container/slot/sword.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/now_playing.png": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/now_playing.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/system.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/toast/tutorial.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/tooltip/background.png": {
+    "source_version": "26.2"
+  },
+  "sprites/tooltip/background.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/tooltip/frame.png": {
+    "source_version": "26.2"
+  },
+  "sprites/tooltip/frame.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/preedit.png": {
+    "source_version": "26.2"
+  },
+  "sprites/widget/preedit.png.mcmeta": {
+    "source_version": "26.2"
+  },
+  "book.png": {
+    "source_version": "26.2"
+  },
+  "container/gamemode_switcher.png": {
+    "source_version": "26.2"
+  },
+  "sprites/gamemode_switcher/slot.png": {
+    "source_version": "26.2"
+  },
+  "sprites/gamemode_switcher/selection.png": {
+    "source_version": "26.2"
+  },
+  "menu_background.png": {
+    "source_version": "26.2"
+  },
+  "menu_list_background.png": {
+    "source_version": "26.2"
+  },
+  "inworld_menu_background.png": {
+    "source_version": "26.2"
+  },
+  "inworld_menu_list_background.png": {
+    "source_version": "26.2"
+  },
+  "tab_header_background.png": {
+    "source_version": "26.2"
+  },
+  "header_separator.png": {
+    "source_version": "26.2"
+  },
+  "footer_separator.png": {
+    "source_version": "26.2"
+  },
+  "inworld_header_separator.png": {
+    "source_version": "26.2"
+  },
+  "inworld_footer_separator.png": {
+    "source_version": "26.2"
+  }
+}
