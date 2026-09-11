@@ -51,7 +51,9 @@ Within each pack, the namespace is `assets/magicaldreams`:
 - `models/item/menu/*.json` — flat generated item models with front GUI lighting.
 - `items/menu/*.json` — item model definitions.
 
-The four server icons retain their generated artwork; prompts are saved in `prompts.json`.
+The four server icons use simplified edits of the original artwork: fewer decorations, broader shading and a 32×32 pixel grid exported at 64×64. Their subjects and model IDs are unchanged. The original artwork remains in `source/`; the original prompts remain in `prompts.json`.
+
+`python3 menu-icons/simplified/export.py` reproduces the current exports and `simplified/comparison.png`, which shows before/after at 16, 32 and 64 pixels plus enlargement. Edited source images and built-in image-generation prompts are saved in `simplified/`. The normalization script removes the generated opaque checkerboard background, reduces shading without dithering and preserves transparent padding. `*-before.png` files preserve the prior runtime textures.
 
 Back, Next, Close, and Refresh are authored by `python3 menu-icons/draw_navigation.py`. This script is their authoritative source: a fixed 32×32 grid, a shared six-color gold/navy palette, a one-pixel outline and consistent bevel shading. Next is an exact horizontal flip of the finished Back texture, including shading, as requested.
 
