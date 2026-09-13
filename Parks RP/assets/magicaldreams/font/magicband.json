@@ -4,7 +4,8 @@
       "type": "space",
       "advances": {
         "\ue7a0": -8,
-        "\ue7a2": -169
+        "\ue7a2": -169,
+        "\ue7a4": -1
       }
     },
     {
@@ -13,7 +14,7 @@
       "ascent": 13,
       "height": 126,
       "chars": [
-        "\ue7a1"
+        "\ue7a1\ue7a3"
       ]
     }
   ]

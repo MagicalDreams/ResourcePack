@@ -1,10 +1,45 @@
-"""Regression checks for shared-model preservation during asset regeneration."""
+"""Regression checks for glyph rendering and shared-model preservation."""
 import json
 import tempfile
 import unittest
 from pathlib import Path
 
-from draw_magicband import export, paper_definitions
+from PIL import Image, ImageChops
+from draw_magicband import export, paper_definitions, panel
+from validate_magicband import validate_panel
+
+class PanelGlyphTest(unittest.TestCase):
+    def setUp(self):
+        root=Path(__file__).resolve().parents[1]
+        self.image=panel()
+        self.font=json.loads((root/'Parks RP/assets/magicaldreams/font/magicband.json').read_text())['providers']
+
+    def test_source_cells_fit_and_reconstruct_the_original_artwork(self):
+        placements=validate_panel(self.image,self.font)
+        assembled=Image.new('RGBA',self.image.size)
+        for column,(_,x,_) in enumerate(placements):
+            cell=self.image.crop((column*176,0,(column+1)*176,252))
+            assembled.paste(cell,(int(x*2),0))
+        self.assertIsNone(ImageChops.difference(self.image,assembled).convert('RGB').getbbox())
+
+    def test_previous_single_glyph_is_rejected_even_at_half_display_size(self):
+        self.font[1]['chars']=['\ue7a1']
+        with self.assertRaisesRegex(AssertionError,'256x256 font atlas'):
+            validate_panel(self.image,self.font)
+
+    def test_tall_source_cells_are_also_rejected(self):
+        with self.assertRaisesRegex(AssertionError,'256x256 font atlas'):
+            validate_panel(Image.new('RGBA',(352,258)),self.font)
+
+    def test_missing_negative_space_is_rejected(self):
+        self.font[0]['advances']['\ue7a4']=0
+        with self.assertRaisesRegex(AssertionError,'gap or overlap'):
+            validate_panel(self.image,self.font)
+
+    def test_shifted_player_title_is_rejected(self):
+        self.font[0]['advances']['\ue7a2']=-168
+        with self.assertRaisesRegex(AssertionError,'title must retain'):
+            validate_panel(self.image,self.font)
 
 class PaperModelPreservationTest(unittest.TestCase):
     def setUp(self):

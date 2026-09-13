@@ -167,14 +167,18 @@ def export(root, output):
     pack=Path('Parks RP'); dest=output/pack; assets=dest/'assets'
     metadata=json.loads((root/pack/'pack.mcmeta').read_text())
     caps=metadata.setdefault('mdcore',{}).setdefault('capabilities',[])
-    if 'magicaldreams:magicband_menu_v1' not in caps: caps.append('magicaldreams:magicband_menu_v1')
-    write_json(dest/'pack.mcmeta',metadata)
+    # The old single-glyph title cannot render this split layout. Never advertise v1.
+    caps[:]=[cap for cap in caps if cap != 'magicaldreams:magicband_menu_v1']
+    if 'magicaldreams:magicband_menu_v2' not in caps: caps.append('magicaldreams:magicband_menu_v2')
+    dest.mkdir(parents=True,exist_ok=True)
+    (dest/'pack.mcmeta').write_text(json.dumps(metadata,indent=2,ensure_ascii=False)+'\n')
     image=panel()
     target=assets/'magicaldreams/textures/gui/magicband/home.png'
     target.parent.mkdir(parents=True,exist_ok=True);image.save(target)
+    # Each 176x252 source cell fits Minecraft's 256x256 glyph atlas.
     font={'providers':[
-        {'type':'space','advances':{'\ue7a0':-8,'\ue7a2':-169}},
-        {'type':'bitmap','file':'magicaldreams:gui/magicband/home.png','ascent':13,'height':126,'chars':['\ue7a1']},
+        {'type':'space','advances':{'\ue7a0':-8,'\ue7a2':-169,'\ue7a4':-1}},
+        {'type':'bitmap','file':'magicaldreams:gui/magicband/home.png','ascent':13,'height':126,'chars':['\ue7a1\ue7a3']},
     ]}
     write_json(assets/'magicaldreams/font/magicband.json',font)
     default=root/pack/'assets/minecraft/font/default.json'
