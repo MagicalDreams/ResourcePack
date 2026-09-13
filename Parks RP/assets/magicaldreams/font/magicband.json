@@ -1,0 +1,20 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+        "\ue7a0": -8,
+        "\ue7a2": -169
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "magicaldreams:gui/magicband/home.png",
+      "ascent": 13,
+      "height": 126,
+      "chars": [
+        "\ue7a1"
+      ]
+    }
+  ]
+}

@@ -2,5 +2,19 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "item/paper"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 730001
+      },
+      "model": "magicaldreams:item/magicband/hit_area"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 730002
+      },
+      "model": "magicaldreams:item/magicband/paper"
+    }
+  ]
 }
