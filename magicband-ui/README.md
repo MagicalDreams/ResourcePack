@@ -29,8 +29,10 @@ python3 scripts/build_packs.py
 
 ## Rollout and in-game verification
 
-Publish the updated Parks ZIP through the existing resource-pack workflow, update its URL/hash in MDCore's managed pack definition, then install the matching ParkManager build. A pack reported as loaded cannot tell the plugin whether it contains this particular asset revision, so deploy the pack first.
+The Parks pack declares `magicaldreams:magicband_menu_v1` in the `mdcore.capabilities` array of `pack.mcmeta`. MDCore downloads and inspects the assigned ZIP in the background using its existing download policy, verifies its configured SHA-1, and caches capabilities by content hash. There is no pack UUID configuration in ParkManager. Packs without this declaration use the classic menu.
 
-ParkManager enables the panel with `[magicband] custom_menu = true` (also the default when absent in an existing config). Set it to `false` to retain the classic 27-slot home screen. The optional `pack_definition_id` restricts the skin to the MDCore Parks pack definition UUID; empty trusts the managed pack assigned to this park server. Pending, failed, unloaded and unavailable managed pack states use the classic screen when the menu opens.
+Deploy the matching MDCore and ParkManager builds, then publish/update the Parks pack through MDCore normally. Old packs, unknown capabilities, pending replacements and inspection failures all use the classic menu. Open MagicBand home screens check asynchronously once per second and switch automatically when support changes, without interrupting navigation to another menu. Initial ZIP inspection may take longer; the classic menu remains usable during that time. A failed inspection is retried after 60 seconds.
+
+`[magicband] custom_menu = false` remains an optional visual override. The old `pack_definition_id` key is unused and can be removed from existing configs. No database migration is needed.
 
 In staging, check GUI scale Auto/2/3/4, a long player name and title colors, tooltips across all three thirds of each button, every destination, visibility switching, profile refresh, inventory click/drag cancellation and the classic fallback. Verify older supported clients if the server accepts them. Offline tests validate alignment mathematically, but client rendering and any other enabled packs still require an in-game check.

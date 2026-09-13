@@ -1,9 +1,17 @@
 {
   "pack": {
     "pack_format": 88,
-    "supported_formats": [34, 88],
+    "supported_formats": [
+      34,
+      88
+    ],
     "min_format": 34,
     "max_format": 88,
     "description": "§bMagicalDreams §aParks Pack\n§bVersion 2.0.0 §a(1.21.1–26.2)"
+  },
+  "mdcore": {
+    "capabilities": [
+      "magicaldreams:magicband_menu_v1"
+    ]
   }
 }

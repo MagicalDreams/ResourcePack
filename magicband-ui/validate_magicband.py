@@ -7,6 +7,8 @@ from pathlib import Path
 from PIL import Image
 
 def validate(root, java=None):
+    metadata=json.loads((root/'Parks RP/pack.mcmeta').read_text())
+    assert 'magicaldreams:magicband_menu_v1' in metadata.get('mdcore',{}).get('capabilities',[]), 'Missing MDCore skin capability'
     assets=root/'Parks RP/assets'
     layout=json.loads((root/'magicband-ui/layout.json').read_text())
     entries=layout['entries']

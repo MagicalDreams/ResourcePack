@@ -165,6 +165,10 @@ def export(root, output):
     # Check conflicts before writing artwork or any shared font/model file.
     paper,modern=paper_definitions(root)
     pack=Path('Parks RP'); dest=output/pack; assets=dest/'assets'
+    metadata=json.loads((root/pack/'pack.mcmeta').read_text())
+    caps=metadata.setdefault('mdcore',{}).setdefault('capabilities',[])
+    if 'magicaldreams:magicband_menu_v1' not in caps: caps.append('magicaldreams:magicband_menu_v1')
+    write_json(dest/'pack.mcmeta',metadata)
     image=panel()
     target=assets/'magicaldreams/textures/gui/magicband/home.png'
     target.parent.mkdir(parents=True,exist_ok=True);image.save(target)
