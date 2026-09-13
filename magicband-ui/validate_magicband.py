@@ -35,8 +35,8 @@ def validate_panel(image, font):
 def validate(root, java=None):
     metadata=json.loads((root/'Parks RP/pack.mcmeta').read_text())
     caps=metadata.get('mdcore',{}).get('capabilities',[])
-    assert 'magicaldreams:magicband_menu_v2' in caps, 'Missing MDCore skin capability'
-    assert 'magicaldreams:magicband_menu_v1' not in caps, 'Split glyphs require the version 2 title sequence'
+    assert 'magicaldreams:magicband_menu_v3' in caps, 'Missing MDCore skin capability'
+    assert not {'magicaldreams:magicband_menu_v1','magicaldreams:magicband_menu_v2'}.intersection(caps), 'Version 3 requires matching button actions'
     assets=root/'Parks RP/assets'
     layout=json.loads((root/'magicband-ui/layout.json').read_text())
     entries=layout['entries']
@@ -70,7 +70,7 @@ def validate(root, java=None):
         menu=java/'src/main/java/us/magicaldreams/parkmanager/magicband/bandGuis'
         prefix='§f'+''.join('\\u%04X'%ord(char) for char in PANEL_SEQUENCE)
         assert f'PANEL_PREFIX = "{prefix}";' in (menu/'MagicBandMenu.java').read_text(), 'Java title sequence and font disagree'
-        assert 'CAPABILITY = "magicaldreams:magicband_menu_v2";' in (menu/'MagicBandMenuRefresh.java').read_text(), 'Java capability and pack disagree'
+        assert 'CAPABILITY = "magicaldreams:magicband_menu_v3";' in (menu/'MagicBandMenuRefresh.java').read_text(), 'Java capability and pack disagree'
     print('PASS: 15 buttons / 45 hit areas, source glyph atlas limits, seamless panel/title alignment, glyph reservation, legacy + modern paper fallback' + (' and Java contract' if java else ''))
 
 if __name__=='__main__':

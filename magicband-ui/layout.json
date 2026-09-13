@@ -24,7 +24,7 @@
     },
     {
       "id": "shows",
-      "label": "SHOWS &\nEVENTS",
+      "label": "SHOWS",
       "original_slot": 11,
       "slots": [
         15,
@@ -34,7 +34,7 @@
     },
     {
       "id": "food",
-      "label": "FIND FOOD",
+      "label": "DINING",
       "original_slot": 10,
       "slots": [
         18,
@@ -54,7 +54,7 @@
     },
     {
       "id": "shop",
-      "label": "SHOP",
+      "label": "SHOP\nLOCATIONS",
       "original_slot": 14,
       "slots": [
         24,
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "id": "waits",
-      "label": "WAIT TIMES",
+      "id": "achievements",
+      "label": "ACHIEVEMENTS",
       "original_slot": 23,
       "slots": [
         27,

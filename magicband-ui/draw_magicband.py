@@ -9,9 +9,9 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 ENTRIES = [
-    ('parks', 'PARK MENU', 13, 9), ('rides', 'RIDES &\nATTRACTIONS', 12, 12), ('shows', 'SHOWS &\nEVENTS', 11, 15),
-    ('food', 'FIND FOOD', 10, 18), ('hotels', 'HOTELS &\nRESORTS', 2, 21), ('shop', 'SHOP', 14, 24),
-    ('waits', 'WAIT TIMES', 23, 27), ('counts', 'RIDE COUNTS', 22, 30), ('time', 'PLAYER TIME', 6, 33),
+    ('parks', 'PARK MENU', 13, 9), ('rides', 'RIDES &\nATTRACTIONS', 12, 12), ('shows', 'SHOWS', 11, 15),
+    ('food', 'DINING', 10, 18), ('hotels', 'HOTELS &\nRESORTS', 2, 21), ('shop', 'SHOP\nLOCATIONS', 14, 24),
+    ('achievements', 'ACHIEVEMENTS', 23, 27), ('counts', 'RIDE COUNTS', 22, 30), ('time', 'PLAYER TIME', 6, 33),
     ('wardrobe', 'WARDROBE', 15, 36), ('backpack', 'BACKPACK', 20, 39), ('locker', 'LOCKER', 24, 42),
     ('profile', 'MY PROFILE', 4, 45), ('customize', 'CUSTOMIZE\nBAND', 19, 48), ('visibility', 'GUEST\nVISIBILITY', 16, 51),
 ]
@@ -93,9 +93,12 @@ def icon(name):
     elif name=='shop':
         d.rectangle((1,4,9,10),outline=c);d.arc((3,0,7,7),180,360,fill=a)
         d.line((3,3,3,5),fill=a);d.line((7,3,7,5),fill=a)
-    elif name in ('waits','time'):
+    elif name=='achievements':
+        d.polygon([(2,1),(8,1),(8,5),(6,7),(4,7),(2,5)],fill=c)
+        d.arc((0,1,4,6),90,270,fill=a);d.arc((6,1,10,6),270,450,fill=a)
+        d.rectangle((4,7,6,9),fill=c);d.line((2,10,8,10),fill=c)
+    elif name=='time':
         d.ellipse((0,0,10,10),outline=c);d.line((5,2,5,5,8,5),fill=a)
-        if name=='waits': d.rectangle((7,7,10,10),fill=P['ink']); d.line((7,8,10,8),fill=c); d.line((7,10,10,10),fill=c)
     elif name=='counts':
         for x,h in [(1,3),(4,6),(7,9)]:d.rectangle((x,10-h,x+1,9),fill=c if x==7 else a)
     elif name=='wardrobe':
@@ -145,7 +148,7 @@ def panel():
         im.alpha_composite(icon(name),(x+5,y+5))
         lines=label.split('\n')
         for i,line in enumerate(lines):
-            end=text(d,(x+32,y+(7 if len(lines)>1 else 12)+i*11),line,P['cream'])
+            end=text(d,(x+(30 if name=='achievements' else 32),y+(7 if len(lines)>1 else 12)+i*11),line,P['cream'])
             assert end <= x+101, (label,end-x)
     return im
 
@@ -181,9 +184,9 @@ def export(root, output):
     pack=Path('Parks RP'); dest=output/pack; assets=dest/'assets'
     metadata=json.loads((root/pack/'pack.mcmeta').read_text())
     caps=metadata.setdefault('mdcore',{}).setdefault('capabilities',[])
-    # The old single-glyph title cannot render this split layout. Never advertise v1.
-    caps[:]=[cap for cap in caps if cap != 'magicaldreams:magicband_menu_v1']
-    if 'magicaldreams:magicband_menu_v2' not in caps: caps.append('magicaldreams:magicband_menu_v2')
+    # Older menus give the achievements slot a different action; require matching semantics.
+    caps[:]=[cap for cap in caps if cap not in ('magicaldreams:magicband_menu_v1','magicaldreams:magicband_menu_v2')]
+    if 'magicaldreams:magicband_menu_v3' not in caps: caps.append('magicaldreams:magicband_menu_v3')
     dest.mkdir(parents=True,exist_ok=True)
     (dest/'pack.mcmeta').write_text(json.dumps(metadata,indent=2,ensure_ascii=False)+'\n')
     image=panel()

@@ -21,7 +21,7 @@ python3 scripts/build_packs.py
 
 ### Header branding
 
-`branding/hat-circle.svg` and `branding/wordmark.png` preserve the supplied originals. `branding/hat-circle.png` is a transparent 256×256 raster of the SVG, rendered with Sharp. Keeping this raster alongside the original lets routine generation continue with only Pillow. Re-rasterize it if the SVG changes. The generator scales the icon to 28×28 source pixels, crops the wordmark’s transparent padding, and uses its alpha channel to apply the existing warm-gold palette color. The logo group aligns with the left edge of the first button column. Header changes preserve the panel size, split glyphs, and version 2 capability.
+`branding/hat-circle.svg` and `branding/wordmark.png` preserve the supplied originals. `branding/hat-circle.png` is a transparent 256×256 raster of the SVG, rendered with Sharp. Keeping this raster alongside the original lets routine generation continue with only Pillow. Re-rasterize it if the SVG changes. The generator scales the icon to 28×28 source pixels, crops the wordmark’s transparent padding, and uses its alpha channel to apply the existing warm-gold palette color. The logo group aligns with the left edge of the first button column. Header changes preserve the panel size, split glyphs, and version 3 capability.
 
 ## Runtime contract
 
@@ -33,10 +33,12 @@ python3 scripts/build_packs.py
 
 ## Rollout and in-game verification
 
-The Parks pack declares `magicaldreams:magicband_menu_v2` in the `mdcore.capabilities` array of `pack.mcmeta`. MDCore downloads and inspects the assigned ZIP in the background using its existing download policy, verifies its configured SHA-1, and caches capabilities by content hash. There is no pack UUID configuration in ParkManager. Packs without this declaration use the classic menu.
+The Parks pack declares `magicaldreams:magicband_menu_v3` in the `mdcore.capabilities` array of `pack.mcmeta`. MDCore downloads and inspects the assigned ZIP in the background using its existing download policy, verifies its configured SHA-1, and caches capabilities by content hash. There is no pack UUID configuration in ParkManager. Packs without this declaration use the classic menu.
 
-Deploy the matching ParkManager build, then publish/update the Parks pack through MDCore normally. MDCore builds with the capability API already support this fix. Version 2 replaces the oversized single-glyph version 1; mixed plugin/pack versions use the classic menu. Do not advertise the version 1 capability in the split-glyph pack. Old packs, unknown capabilities, pending replacements and inspection failures all use the classic menu. Open MagicBand home screens check asynchronously once per second and switch automatically when support changes, without interrupting navigation to another menu. Initial ZIP inspection may take longer; the classic menu remains usable during that time. A failed inspection is retried after 60 seconds.
+Deploy the matching ParkManager build, then publish/update the Parks pack through MDCore normally. MDCore builds with the capability API already support this fix. Version 3 replaces Wait Times with Achievements and updates the directory labels. Mixed plugin/pack versions use the classic menu so artwork cannot point to the wrong action. Do not advertise earlier MagicBand capability versions. Old packs, unknown capabilities, pending replacements and inspection failures all use the classic menu. Open MagicBand home screens check asynchronously once per second and switch automatically when support changes, without interrupting navigation to another menu. Initial ZIP inspection may take longer; the classic menu remains usable during that time. A failed inspection is retried after 60 seconds.
 
 `[magicband] custom_menu = false` remains an optional visual override. The old `pack_definition_id` key is unused and can be removed from existing configs. No database migration is needed.
 
 In staging, check GUI scale Auto/2/3/4, a long player name and title colors, tooltips across all three thirds of each button, every destination, visibility switching, profile refresh, inventory click/drag cancellation and the classic fallback. Verify older supported clients if the server accepts them. Offline tests validate alignment mathematically, but client rendering and any other enabled packs still require an in-game check.
+
+The home menu uses Dining, Shop Locations, and Shows for the existing destination directories. Achievements is a trophy button with a coming-soon message. Player Time hover text updates while the menu is open. Backpacks have 54 slots; deploy the matching MDCore inventory scope definition as well as ParkManager. Existing 27-slot contents retain their positions.
