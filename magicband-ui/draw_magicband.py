@@ -116,13 +116,27 @@ def icon(name):
         d.ellipse((0,2,10,8),outline=c);d.ellipse((4,3,6,7),fill=a)
     return im
 
+def brand_header(im):
+    """Use supplied brand silhouettes; retain the icon colors and tint the black wordmark."""
+    branding=Path(__file__).resolve().parent/'branding'
+    with Image.open(branding/'hat-circle.png') as source:
+        hat=source.convert('RGBA').resize((28,28),Image.Resampling.LANCZOS)
+    with Image.open(branding/'wordmark.png') as source:
+        alpha=source.getchannel('A')
+        alpha=alpha.crop(alpha.getbbox())
+        alpha.thumbnail((214,28),Image.Resampling.LANCZOS)
+    wordmark=Image.new('RGBA',alpha.size,P['light'])
+    wordmark.putalpha(alpha)
+    x=16  # Align the brand group with the first button column.
+    im.alpha_composite(hat,(x,38))
+    im.alpha_composite(wordmark,(x+hat.width+8,38+(28-wordmark.height)//2))
+
 def panel():
     im=Image.new('RGBA',(352,252),P['ink']);d=ImageDraw.Draw(im)
     d.rectangle((2,2,349,251),outline=P['rim'],width=2)
     d.rectangle((6,6,345,31),fill=P['edge']) # Runtime player name and chosen title color.
     for x in (4,338):d.line((x,4,x+8,4),fill=P['light'],width=2)
-    im.alpha_composite(icon('customize'),(20,42))
-    text(d,(56,45),'MAGICALDREAMS',P['light'],2)
+    brand_header(im)
     for name,label,old,first in ENTRIES:
         x,y=16+36*(first%9),36+36*(first//9)
         d.rounded_rectangle((x,y,x+103,y+31),radius=10,fill=P['rim'])

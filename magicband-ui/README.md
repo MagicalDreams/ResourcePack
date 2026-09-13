@@ -4,7 +4,7 @@ The Parks pack contains a blue-and-gold home screen with 15 rounded buttons. Eac
 
 ![Asset preview](preview.png)
 
-This is a 4× GUI-scale asset composite, not an in-game screenshot. Artwork is authored at 2× GUI resolution (352×252) with finer icons and 5×7 lettering; the tagline is omitted. Minecraft supplies the actual player name/title color, inventory contents and hover tooltips. The title is never baked into the runtime texture. The underlying hit areas remain square, with the normal two-pixel gaps between slots. `hit-areas.png` shows those regions in pink.
+This is a 4× GUI-scale asset composite, not an in-game screenshot. Artwork is authored at 2× GUI resolution (352×252) with finer button icons and 5×7 button lettering; the tagline is omitted. The header uses the supplied hat-circle SVG and MagicalDreams PNG wordmark, with the wordmark tinted warm gold for contrast. Minecraft supplies the actual player name/title color, inventory contents and hover tooltips. The title is never baked into the runtime texture. The underlying hit areas remain square, with the normal two-pixel gaps between slots. `hit-areas.png` shows those regions in pink.
 
 ## Authoring
 
@@ -18,6 +18,10 @@ python3 scripts/build_packs.py
 ```
 
 `draw_magicband.py --output /tmp/magicband-preview` stages assets and previews without modifying the pack. The generator rejects shared paper-model edits before writing any files; merge those changes manually before regenerating. Keep `layout.json`, the generator's entries, and ParkManager's `MagicBandMenuLayout.java` synchronized when changing button positions.
+
+### Header branding
+
+`branding/hat-circle.svg` and `branding/wordmark.png` preserve the supplied originals. `branding/hat-circle.png` is a transparent 256×256 raster of the SVG, rendered with Sharp. Keeping this raster alongside the original lets routine generation continue with only Pillow. Re-rasterize it if the SVG changes. The generator scales the icon to 28×28 source pixels, crops the wordmark’s transparent padding, and uses its alpha channel to apply the existing warm-gold palette color. The logo group aligns with the left edge of the first button column. Header changes preserve the panel size, split glyphs, and version 2 capability.
 
 ## Runtime contract
 
